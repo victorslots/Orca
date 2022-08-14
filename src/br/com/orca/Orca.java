@@ -141,22 +141,22 @@ public class Orca {
 		lblArea.setBounds(297, 25, 180, 14);
 		Janela.getContentPane().add(lblArea);
 		
-		lblQtdePorM = new JLabel("Quantidade / M\u00B2");
+		lblQtdePorM = new JLabel("Quantidade no M²");
 		lblQtdePorM.setForeground(new Color(0, 128, 128));
 		lblQtdePorM.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblQtdePorM.setBounds(297, 64, 180, 14);
 		Janela.getContentPane().add(lblQtdePorM);
 		
-		lblMetragemPorQtde = new JLabel("Metragem/Qtde");
+		lblMetragemPorQtde = new JLabel("Metros pela Qtde");
 		lblMetragemPorQtde.setForeground(new Color(0, 128, 128));
 		lblMetragemPorQtde.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblMetragemPorQtde.setBounds(297, 103, 180, 14);
 		Janela.getContentPane().add(lblMetragemPorQtde);
 		
-		lblQtdePorVM = new JLabel("Quantidade / Valor Minimo");
+		lblQtdePorVM = new JLabel("Quantidade no Valor Minimo");
 		lblQtdePorVM.setForeground(new Color(0, 128, 128));
 		lblQtdePorVM.setFont(new Font("Tahoma", Font.BOLD, 16));
-		lblQtdePorVM.setBounds(297, 142, 227, 14);
+		lblQtdePorVM.setBounds(297, 142, 244, 14);
 		Janela.getContentPane().add(lblQtdePorVM);
 		
 		lblValorPorAds = new JLabel("Pre\u00E7o aproximado por adesivo");

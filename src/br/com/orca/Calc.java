@@ -1,13 +1,16 @@
 package br.com.orca;
 
+import java.text.DecimalFormat;
+
 public class Calc {
 	
 	private float preco = 90;
-	private float preco_min = 70;
+	private float precoMin = 70;
 	private float area;
 	private float med1;
 	private float med2;
 	private int qtde;
+	private DecimalFormat formatter;
 	
 	public String calcArea(float medida1, float medida2) {
 		area = (medida1*medida2)/10000;
@@ -18,7 +21,8 @@ public class Calc {
 	}
 	
 	public String qtde_mquad() {
-		return Double.toString(Math.floor(1/area));
+		formatter = new DecimalFormat("#,##0 un");
+		return formatter.format(Math.floor(1/area));
 	}
 	
 	public String mquad_qtde(int quantidade) {
@@ -28,14 +32,17 @@ public class Calc {
 	}
 	
 	public String qtde_vm(){
-		return Double.toString(Math.floor((preco_min/preco)/area));
+		formatter = new DecimalFormat("#,##0 un");
+		return formatter.format(Math.floor((precoMin/preco)/area));
 	}
 	
 	public String valor_total() {
-		return qtde * area * preco > 70 ? Double.toString(qtde * area * preco) : Double.toString(preco_min);
+		formatter = new DecimalFormat("R$ #,##0.00");
+		return qtde * area * preco > 70 ? formatter.format(qtde * area * preco) : formatter.format(precoMin);
 	}
 	
 	public String valor_ads() {
-		return Double.toString((qtde * area * preco)/qtde);
+		formatter = new DecimalFormat("R$ #,##0.00");
+		return formatter.format((qtde * area * preco)/qtde);
 	}
 }
