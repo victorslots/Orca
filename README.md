@@ -1,7 +1,7 @@
-#Orca
-**Orçamento Simplificado em Java**
+<h1>Orca</H1>
+<b>Orçamento Simplificado em Java</b>
 
-Projeto criado com a finalidade de facilitar os cálculos e visualizar as informações referentes aos orçamentos adesivos no meu posto de trabalho.
+Projeto criado com a finalidade de facilitar os cálculos e visualizar as informações referentes aos orçamentos de adesivos no meu posto de trabalho.
 A partir das medidas fornecidas, ele fornece as seguintes informações:
 
 |CAMPO|DESCRIÇÃO|
